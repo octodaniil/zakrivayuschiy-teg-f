@@ -1,6 +1,6 @@
 :root {
-  --main-font: 'Inter';
-  --side-font: 'PressStart2p';
+  --main-font: 'Inter', Tahoma, sans-serif;
+  --side-font: 'PressStart2p', Tahoma, sans-serif;
   --title-weight: 700;
   --text-weight: 400;
   --background-color: #fff;
@@ -10,5 +10,6 @@
   --color-gradient-end: #1a1a1a;
   --color-button-disabled: #666666;
   --button-text-color: #fff;
-  --sparks: red;
+  --heart-animation-color: red;
+
 }

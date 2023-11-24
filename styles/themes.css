@@ -14,6 +14,7 @@
   --color-gradient-end: #1a1a1a;
   --color-button-disabled: #666666;
   --button-text-color: #fff;
+  --heart-animation-color: red;
 }
 
 :root.theme-dark {
@@ -26,6 +27,7 @@
   --color-gradient-end: #004306;
   --color-button-disabled: #007a0c;
   --button-text-color: #00CC14;
+  --heart-animation-color: red;
 }
 
 @media (prefers-color-scheme: light) {
@@ -39,10 +41,11 @@
     --color-gradient-end: #1a1a1a;
     --color-button-disabled: #666666;
     --button-text-color: #fff;
+    --heart-animation-color: red;
   }
 
   .page {
-    font-variation-settings: 'wqht' 400;
+    font-variation-settings: 'wqht' var(--text-weight);
   }
 }
 
@@ -57,9 +60,10 @@
     --color-gradient-end: #004306;
     --color-button-disabled: #007a0c;
     --button-text-color: #00CC14;
+    --heart-animation-color: red;
   }
 
   .page {
-    font-variation-settings: 'wqht' 465;
+    font-variation-settings: 'wqht' var(--text-weight);
   }
 }
