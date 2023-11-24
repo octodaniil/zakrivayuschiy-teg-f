@@ -77,15 +77,15 @@
 }
 
 .theme-menu__button:disabled {
-  pointer-events: none;
   opacity: 0.6;
+  pointer-events: none;
 }
 
 .theme-menu__button:disabled::before {
   content: "▶";
   position: absolute;
-  left: -14px;
   top: 0;
+  left: -14px;
   animation: arrow .5s ease-in-out infinite alternate;
 }
 
@@ -96,18 +96,18 @@
   left: 6px;
   width: 82%;
   height: 3px;
-  background-color: var(--accent-color);
   opacity: 0.6;
+  background-color: var(--accent-color);
+  transition: .2s;
   transform: scaleX(0);
   transform-origin: 0;
-  transition: .2s;
 }
 
 .theme-menu__button:focus {
   border: none;
   outline: none;
-  color: var(--accent-color);
   opacity: 0.6;
+  color: var(--accent-color);
 }
 
 .theme-menu__button:focus-visible::after {
@@ -139,9 +139,9 @@
 }
 
 .card__title {
-  font-variation-settings: 'wqht' var(--title-weight);
   padding: 3px 0 5px 10px;
   font-size: 18px;
+  font-variation-settings: 'wqht' var(--title-weight);
 }
 
 .card__block-img {
@@ -152,8 +152,8 @@
 
 .img__label {
   position: absolute;
-  right: 0;
   top: 0;
+  right: 0;
   z-index: 99;
   padding: 25px;
   opacity: .5;
@@ -170,9 +170,9 @@
 
 @supports((text-stroke: 1px) or (-webkit-text-stroke: 1px)) {
   .img__label {
+    text-shadow: none;
     -webkit-text-stroke: 1px var(--background-color);
     text-stroke: 1px var(--background-color);
-    text-shadow: none;
   }
 }
 
@@ -309,8 +309,8 @@
 }
 
 .floppy {
-  margin-right: 6px;
   margin-top: 4px;
+  margin-right: 6px;
   mix-blend-mode: difference;
 }
 
@@ -321,8 +321,8 @@
   align-items: center;
   max-width: 347px;
   border: none;
-  outline: 2px solid var(--accent-color);
   padding: 31px 31px 31px 26px;
+  outline: 2px solid var(--accent-color);
   font-family: var(--side-font);
   font-size: 14px;
   text-transform: uppercase;
