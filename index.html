@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<htm lang="ru">
+<html lang="ru">
 <head>
    <meta charset="UTF-8" />
    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -283,7 +283,7 @@
       </ul>
       <div class="save__block">
          <button type="button"
-            onclick="window['popup'].show()"
+            onclick="window['popup'].showModal()"
             aria-controls="popup"
             class="btn save__button hover-effect">
             <svg class="floppy save__floopy" width="21" height="21">
@@ -298,7 +298,7 @@
          </svg>
          <p class="popup__text">Вставьте дискету, чтобы продолжить</p>
          <form method="dialog" class="popup__form">
-          <button type="submit" onclick="window['popup'].close()" class="popup__button hover-effect btn"><span class="button__text">ОК</span></button>
+          <button class="popup__button hover-effect btn"><span class="button__text">ОК</span></button>
          </form>
       </dialog>
    </main>
