@@ -45,7 +45,7 @@
   }
 
   .page {
-    font-variation-settings: 'wqht' var(--text-weight);
+    font-variation-settings: 'wght' var(--text-weight);
   }
 }
 
@@ -64,6 +64,6 @@
   }
 
   .page {
-    font-variation-settings: 'wqht' var(--text-weight);
+    font-variation-settings: 'wght' var(--text-weight);
   }
 }
