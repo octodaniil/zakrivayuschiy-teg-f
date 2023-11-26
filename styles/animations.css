@@ -44,46 +44,50 @@
 }
 
 .core {
-  transition: fill .3s .03s ease;
+  transition: fill .3s .03s linear;
+}
+
+.contour {
+  transition: fill .1s linear;
 }
 
 .like-icon:hover .core {
   fill: var(--accent-color);
-  transition: fill .3s ease;
+  transition: fill .3s linear;
 }
 
 .like-icon:active .core {
   fill: var(--heart-animation-color);
-  transition: fill .3s ease;
+  transition: fill .3s linear;
 }
 
 .main-body {
-  transition: fill .3s ease;
+  transition: fill .3s linear;
 }
 
 .like-icon:hover .main-body {
   fill: var(--accent-color);
-  transition: fill .3s .05s ease;
+  transition: fill .3s .05s linear;
 }
 
 .like-icon:active .main-body {
   fill: var(--heart-animation-color);
-  transition: fill .3s .05 ease;
+  transition: fill .3s .05 linear;
 }
 
 .like-icon.is-liked .contour {
   fill: var(--heart-animation-color);
-  transition: fill .3s .06s ease;
+  transition: fill .3s .06s linear;
 }
 
 .like-icon.is-liked .core {
   fill: var(--heart-animation-color);
-  transition: fill .3s ease;
+  transition: fill .3s linear;
 }
 
 .like-icon.is-liked .main-body {
   fill: var(--heart-animation-color);
-  transition: fill .3s ease;
+  transition: fill .3s .05s linear;
 }
 
 .like-icon.is-liked {

@@ -50,7 +50,7 @@
 
 .header__title {
   margin-bottom: 20px;
-  font-size: 65px;
+  font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
   text-transform: uppercase;
 }
 
@@ -129,12 +129,18 @@
   align-items: center;
 }
 
+.main__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .main__list-item:not(:last-child) {
   margin-bottom: 54px;
 }
 
 .main__list-item:last-child {
-  margin-bottom: 54px;
+  margin-bottom: 50px;
 }
 
 .main__card {
@@ -238,7 +244,8 @@
 .card__icon-button {
   display: flex;
   align-items: center;
-  height: 42px;
+  min-height: 42px;
+  margin-right: 2px;
   border: none;
   background-color: transparent;
   transition: .3s ease;
@@ -306,11 +313,13 @@
   display: flex;
   justify-content: center;
   margin-bottom: 93px;
-  transform: translateY(-9px);
 }
 
 .save__button {
-  padding: 16px 21px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 14px 21px;
   background-color: var(--background-color);
 }
 
@@ -353,7 +362,7 @@
 .popup__button {
   width: 100%;
   margin-top: 30px;
-  padding: 9px;
+  padding: 12px;
 }
 
 .popup::backdrop {
